@@ -1,0 +1,64 @@
+*,* ::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f4f9;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*light theme */
+
+.profile-card{
+    background-color: #ffffff;
+    color: #333333;
+    width: 320px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:background-color 0.3s ease,color 0.3s ease;
+} 
+.avatar{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.user-name{
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.user-role{
+    color:#007bff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.user-bio{
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-btn:hover{
+    background-color: #0056b3;
+}
+
+/*Dark Theme class */
+.profile-card.darkmode{
+    background-color: #1e1e2e;
+    color:#f4f4f9;
+}
+
+.profile-card.dark-mode.user-role{
+    color:#89b4fa;
+}
+.profile-card.dark-mode.toggle-btn{
+    background-color: #89b4fa;
+    color:#1e1e2e;
+}
